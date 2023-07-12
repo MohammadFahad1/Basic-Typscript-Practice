@@ -207,19 +207,103 @@
 // getTodoData();
 
 // Conditional Types
-type a1 = string;
-type a2 = a1 extends string ? string : null;
-type a3 = undefined;
-type a4 = number;
+// type a1 = string;
+// type a2 = a1 extends string ? string : null;
+// type a3 = undefined;
+// type a4 = number;
 
-type d = a1 extends null ? null : a3 extends number ? number : a4 extends null ? null : never;
+// type d = a1 extends null ? null : a3 extends number ? number : a4 extends null ? null : never;
 
-type Sheikh = {
-    wife1: string;
-    wife2: string;
+// type Sheikh = {
+//     wife1: string;
+//     wife2: string;
+// }
+
+// // check ei sheikh type a wife2 ase kina ? true : false
+
+// type CheckProperty<T> = T extends 'wife1' ? true : false;
+// type CheckWife1 = CheckProperty<Sheikh>;
+
+// type a1 = null;
+// type a2 = a1 extends string ? string : null;
+
+// // nested conditional type
+// type a3 = undefined;
+// type a4 = number;
+
+// type d = a1 extends null ? null : a3 extends number ? number : a4 extends null ? null : never;
+
+// type Sheikh = {
+//     wife1: string;
+//     wife2: string;
+// }
+
+// // check korbe ei sheikhtype ea wife1 ase kina ? true : false
+
+// type CheckProperty<T, K> = K extends keyof T ? true : false;
+
+// type CheckWife1 = CheckProperty<Sheikh, 'wife1'>;
+
+// const arrayOfNumbers = [1, 2, 3];
+// const arrayOfStrings = arrayOfNumbers.map(num => num.toString());
+
+// console.log(arrayOfStrings);
+
+// type AreaNumber = {
+//     height: number;
+//     width: number;
+// }
+
+// type A = AreaNumber['height']
+
+// function getArrayItem<T, K extends keyof T>(arr: T[], index: number, key: K): T[K] {
+
+//     const item = arr[index];
+
+//     return item[key];
+
+//   }
+
+
+
+//   const users = [ { name: 'John', age: 30 }, { name: 'Mary', age: 25 },];
+
+//   console.log(getArrayItem(users, 0, 'name'))
+
+// type Data = { num1: number }
+
+
+
+// type B = {
+
+//   [key in keyof Data]: string;
+
+// }
+
+// const numbers:B = {
+
+//   num1: 20
+
+// }
+
+
+interface Person {
+
+    firstName: string;
+
+    lastName: string;
+
 }
 
-// check ei sheikh type a wife2 ase kina ? true : false
 
-type CheckProperty<T> = T extends 'wife1' ? true : false;
-type CheckWife1 = CheckProperty<Sheikh>;
+
+function fullName<T extends Person>(person: T): string {
+
+    return `${person.firstName} ${person.lastName}`;
+
+}
+
+fullName({
+    firstName: "Md. Fahad",
+    lastName: "Munshi"
+})
