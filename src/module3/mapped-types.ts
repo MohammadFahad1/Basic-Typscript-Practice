@@ -74,25 +74,25 @@
 // }
 // const rollNumber: RollNumberType = [1, 2, 3, 4, 5];
 
-interface IRelationWithSalary {
-    husband: string;
-    wife: string;
-}
+// interface IRelationWithSalary {
+//     husband: string;
+//     wife: string;
+// }
 
-interface RelationWithSalary<T, S> {
-    name: T;
-    salary: S;
-}
+// interface RelationWithSalary<T, S> {
+//     name: T;
+//     salary: S;
+// }
 
-const couple: RelationWithSalary<string, number> = {
-    name: "Md. Fahad Monshi",
-    salary: 1000000
-}
+// const couple: RelationWithSalary<string, number> = {
+//     name: "Md. Fahad Monshi",`  `
+//     salary: 1000000
+// }
 
-const touple: RelationWithSalary<IRelationWithSalary, number> = {
-    name: {
-        husband: "Md. Fahad Monshi",
-        wife: 'Future Wife'
-    },
-    salary: 10000
-}
+// const touple: RelationWithSalary<IRelationWithSalary, number> = {
+//     name: {
+//         husband: "Md. Fahad Monshi",
+//         wife: 'Future Wife'
+//     },
+//     salary: 10000
+// }
