@@ -303,7 +303,7 @@ function fullName<T extends Person>(person: T): string {
 
 }
 
-fullName({
+const res = fullName({
     firstName: "Md. Fahad",
     lastName: "Munshi"
 })
