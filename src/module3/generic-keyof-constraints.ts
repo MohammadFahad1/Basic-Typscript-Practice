@@ -1,18 +1,18 @@
-type PersonType = {
-    name: string;
-    age: number;
-    address: string;
-}
+// type PersonType = {
+//     name: string;
+//     age: number;
+//     address: string;
+// }
 
-type newType = "name" | "age" | "address"; //manually korsi
+// type newType = "name" | "age" | "address"; //manually korsi
 
-type newTypeUsingKeyOff = keyof PersonType;
+// type newTypeUsingKeyOff = keyof PersonType;
 
-const a: newType = 'name';
-const b: newTypeUsingKeyOff = 'address';
+// const a: newType = 'name';
+// const b: newTypeUsingKeyOff = 'address';
 
-function getProperty<X, Y extends keyof X>(obj: X, key: Y) {
-    obj[key]
-}
+// function getProperty<X, Y extends keyof X>(obj: X, key: Y) {
+//     obj[key]
+// }
 
-const property = getProperty({ name: 'Mr. X', age: 100 }, "age");
+// const property = getProperty({ name: 'Mr. X', age: 100 }, "age");

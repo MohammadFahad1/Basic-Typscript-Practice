@@ -44,49 +44,49 @@
 // console.log(student1.makeSleep(10));
 // console.log(teacher1.takeClasses(5));
 
-class Person {
-    name: string;
-    age: number;
-    address: string;
+// class Person {
+//     name: string;
+//     age: number;
+//     address: string;
 
-    constructor(name: string, age: number, address: string) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
+//     constructor(name: string, age: number, address: string) {
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
 
-    makeSleep(hours: number): string {
-        return `The ${this.name} will sleep ${hours} hours.`;
-    }
-}
+//     makeSleep(hours: number): string {
+//         return `The ${this.name} will sleep ${hours} hours.`;
+//     }
+// }
 
-class Student extends Person {
-    constructor(name: string, age: number, address: string) {
-        super(name, age, address);
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
-}
+// class Student extends Person {
+//     constructor(name: string, age: number, address: string) {
+//         super(name, age, address);
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
+// }
 
-class Teacher extends Person {
-    designation: string;
+// class Teacher extends Person {
+//     designation: string;
 
-    constructor(name: string, age: number, address: string, designation: string) {
-        super(name, age, address);
-        this.name = name;
-        this.age = age;
-        this.address = address;
-        this.designation = designation;
-    }
+//     constructor(name: string, age: number, address: string, designation: string) {
+//         super(name, age, address);
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//         this.designation = designation;
+//     }
 
-    takeClasses(numberOfClass: number): string {
-        return `The ${this.name} will take ${numberOfClass} classes.`;
-    }
-}
+//     takeClasses(numberOfClass: number): string {
+//         return `The ${this.name} will take ${numberOfClass} classes.`;
+//     }
+// }
 
-const student1 = new Student("Md. Fahad Monshi", 24, "Dhaka, Bangladesh");
-const teacher1 = new Teacher("Md. Fahad Monshi", 24, "Dhaka, Bangladesh", "Programmer");
+// const student1 = new Student("Md. Fahad Monshi", 24, "Dhaka, Bangladesh");
+// const teacher1 = new Teacher("Md. Fahad Monshi", 24, "Dhaka, Bangladesh", "Programmer");
 
-console.log(student1);
-console.log(teacher1);
+// console.log(student1);
+// console.log(teacher1);
